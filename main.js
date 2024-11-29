@@ -1,5 +1,6 @@
 let isResultDisplayed = false;
 
+// display function
 function appendToDisplay(value) {
     const display = document.getElementById('display');
 
@@ -15,6 +16,7 @@ function appendToDisplay(value) {
     display.value += value;
 }
 
+// delete character from last
 function deleteLastCharacter() {
     const display = document.getElementById('display');
    
@@ -26,11 +28,13 @@ function deleteLastCharacter() {
     }
 }
 
+// clearchat
 function clearDisplay() {
     document.getElementById('display').value = '';
     isResultDisplayed = false; 
 }
 
+// calculate result
 function calculateResult() {
     const display = document.getElementById('display');
     try {
@@ -41,3 +45,5 @@ function calculateResult() {
         isResultDisplayed = true; 
     }
 }
+
+
