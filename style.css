@@ -7,14 +7,6 @@
   font-family: "Poppins", serif;
 }
 
-:root {
-  --primary-color: #B9E5E8;
-  --background-color: #f0f0f0;
-  --color-white: #ddd;
-  --secondary-color: #7AB2D3;
-
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -30,7 +22,7 @@ body {
 }
 
 .Calculator {
-  background-color: var(--primary-color);
+  background-color:white;
   padding: 20px;
   ;
   border-radius: 20px;
@@ -45,35 +37,43 @@ h2 {
 
 .display {
   width: 100%;
+  height: 100%;
   padding: 10px;
   font-size: 2rem;
   text-align: right;
   border: none;
   outline: none;
-  background-color: var(--primary-color);
+  background-color:#f6edee ;
   margin-bottom: 10px;
+  border-radius:30px;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  margin-top: 16px;
 }
 
 .btn {
   padding: 16px;
   font-size: 1.5rem;
-  background-color: transparent;
+  background-color: #f6edee;
   border: none;
-  border-radius: 20px;
+  border-radius:50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .buttons button:nth-child(-n+4) {
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: #f9dbd9;
+  color: black;
+}
+
+.btn:hover{
+ border-radius:20px;
+
 }
 
 .buttons button:nth-child(-n+4):hover,
@@ -83,8 +83,8 @@ h2 {
 }
 
 .buttons button:nth-child(4n) {
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: #f9dbd9;
+  color: black;
 }
 
 @media (max-width: 600px) {
